@@ -3,13 +3,12 @@
 try:
     hours = float(input("Enter Hours: "))
     rate = float(input("Enter Rate: "))
-except:
-    print("Error, please enter numeric input")
-    quit()
 
     if hours > 40:
         extra_hours = hours - 40
         hours = 40 + (extra_hours * 1.5)
 
     print(f'Pay: {hours * rate}')
-
+except:
+    print("Error, please enter numeric input")
+    quit()
